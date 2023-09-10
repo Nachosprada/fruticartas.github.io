@@ -80,9 +80,11 @@ p {
 }
 
 .frutas-izquierda {
+    display: flex;
     font-size: 3rem;
 }
 
 .frutas-derecha {
+    display: flex;
     font-size: 3rem;
 }
