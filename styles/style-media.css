@@ -1,0 +1,168 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 3rem;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Verdana';
+    background-color: black;
+    color: white;
+    grid-area: header;
+    gap: 5rem;
+}
+
+.nueva-partida {
+    padding: 0.5rem;
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    font-size: 1.5rem;
+}
+
+.nueva-partida:hover {
+    background-color: aqua;
+    cursor:pointer;
+}
+
+.menu-inicio {
+    padding: 0.5rem;
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    font-size: 1.5rem;
+}
+
+.menu-inicio:hover {
+    background-color: aqua;
+    cursor:pointer;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablero {
+    margin:3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 30rem;
+    width: 35rem;
+}
+
+.fila {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    width: 35rem;
+}
+
+.carta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: royalblue;
+    height: 6rem;
+    width: 4rem;
+    border: 3px solid black;
+}
+
+.carta:hover {
+    border: 6px solid black;
+    cursor: pointer;
+}
+
+footer {
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carta-girada {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: rgb(37, 37, 37);
+}
+
+.imagen-oculta {
+   visibility: hidden;
+}
+
+.contador-errores {
+    width:20rem;
+    position: absolute;
+    font-family: 'Verdana';
+    color: white;
+    align-self: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    font-family: 'Verdana';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 13rem;
+    width: 20rem;
+    border: 2px solid black;
+    background-color: rgb(38, 38, 38);
+    color:white;
+    gap:1rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+.boton-menu{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid white;
+    height: 3rem;
+    width: 10rem;
+}
+
+.boton-menu:hover {
+    background-color: darkblue;
+    cursor:pointer;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+.palpitante {
+    animation: palpitar 0.2s infinite alternate ease-in-out;
+}
+
+@keyframes palpitar {
+    100%{
+        transform:scale(1.3);
+    }
+}
