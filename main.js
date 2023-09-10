@@ -75,7 +75,7 @@ function clicarCarta(e) {
             arrayAuxiliar[0].addEventListener('click', clicarCarta);
             arrayAuxiliar.pop();
             esperandoPar = false;
-            }, 500);
+            }, 250);
         }
     } else {    
         arrayAuxiliar.push(cartaClicada);
