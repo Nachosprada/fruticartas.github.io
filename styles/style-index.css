@@ -75,6 +75,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    display: flex;
+}
+
 .frutas-izquierda {
     font-size: 3rem;
 }
