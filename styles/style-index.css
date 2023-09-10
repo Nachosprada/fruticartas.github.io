@@ -75,10 +75,6 @@ a {
     text-decoration: none;
 }
 
-p {
-    display: flex;
-}
-
 .frutas-izquierda {
     display: flex;
     font-size: 3rem;
