@@ -109,7 +109,7 @@ carta16.addEventListener('click',clicarCarta);
 carta17.addEventListener('click',clicarCarta);
 carta18.addEventListener('click',clicarCarta);
 carta19.addEventListener('click',clicarCarta);
-}, 11000);
+}, 9000);
 
 
 //Por último, implementamos los bucles que iniciarán la partida con el efecto secuencial. Cada elemento carta es un <div> al que le añadimos un <p> que llevará como contenido de texto la imagen de fruta correspondiente del 'arrayFrutas'.
@@ -131,6 +131,6 @@ baraja.forEach((carta) => {
     setTimeout(() => {
         carta.classList.remove('carta-girada');
         carta.childNodes[0].classList.add('imagen-oculta');
-    }, 10000);
+    }, 8000);
 });
 
